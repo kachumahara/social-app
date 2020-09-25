@@ -7,6 +7,9 @@ const app = express();
 
 connectDB();
 
+//Init Middleware
+app.use(express.json({ extended: true }));
+
 const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => res.send("API running"));
