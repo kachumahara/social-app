@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://user12:user12@cluster0.kwxz6.mongodb.net/socialapp?retryWrites=true&w=majority",
-  "jwtSecret": "mysecrettoken"
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "1b8b5f44b7dd72afc75a",
+  "githubSecret": "d6d87af3b5fc25fd90ba1a38c26d2a5399b3076b"
 }
