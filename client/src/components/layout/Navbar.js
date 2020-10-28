@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => (
-  <nav class="navbar bg-dark">
+  <nav className="navbar bg-dark">
     <h1>
       <Link to="/">
         <i className="fas fa-code" /> ReactConnector
