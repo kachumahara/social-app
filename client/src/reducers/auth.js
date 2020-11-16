@@ -3,6 +3,8 @@ import {
   REGISTER_FAIL,
   USER_LOADED,
   AUTH_ERROR,
+  LOGIN_SUCCESS,
+  LOGIN_FAIL,
 } from "../actions/types";
 
 // Setting up the first initial state to default
@@ -28,6 +30,7 @@ export default function (state = initialState, action) {
       };
 
     case REGISTER_SUCCESS:
+    case LOGIN_SUCCESS:
       localStorage.setItem("token", payload.token);
       return {
         ...state, // spread operator
@@ -36,9 +39,10 @@ export default function (state = initialState, action) {
         loading: false,
       };
 
-    //test if register fail
+    //test if register and login fail
     case REGISTER_FAIL:
     case AUTH_ERROR:
+    case LOGIN_FAIL:
       localStorage.removeItem("token");
       return {
         ...state,
