@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
 const PrivateRoute = ({
-  component: Component,
+  // component: Component,
   auth: { isAuthenticated, loading },
   ...rest
 }) => (
